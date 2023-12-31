@@ -73,7 +73,8 @@ if (totalOrtWeighted >= 80) {
   else if (result >= 32 && result < 34) harfNotu = "DC";
   else if (result >= 29 && result < 32) harfNotu = "DD+";
   else if (result >= 27 && result < 29) harfNotu = "DD";
-  else harfNotu = "FF";
+  else if (result < 27) harfNotu = "FF";
+  else harfNotu = "Hata!";
 } 
 else if(totalOrtWeighted >= 70 && totalOrtWeighted < 80){
   if (result >= 59) harfNotu = "AA";
@@ -89,7 +90,8 @@ else if(totalOrtWeighted >= 70 && totalOrtWeighted < 80){
   else if (result >= 34 && result < 36) harfNotu = "DC";
   else if (result >= 31 && result < 34) harfNotu = "DD+";
   else if (result >= 29 && result < 31) harfNotu = "DD";
-  else harfNotu = "FF";
+  else if (result < 29) harfNotu = "FF";
+  else harfNotu = "Hata!";
 }
 else if(totalOrtWeighted >= 62.5 && totalOrtWeighted < 70){
   if (result >= 61) harfNotu = "AA";
@@ -105,7 +107,8 @@ else if(totalOrtWeighted >= 62.5 && totalOrtWeighted < 70){
   else if (result >= 36 && result < 38) harfNotu = "DC";
   else if (result >= 33 && result < 36) harfNotu = "DD+";
   else if (result >= 31 && result < 33) harfNotu = "DD";
-  else harfNotu = "FF";
+  else if (result < 31) harfNotu = "FF";
+  else harfNotu = "Hata!";
 }
 else if(totalOrtWeighted >= 57.5 && totalOrtWeighted < 62.5){
   if (result >= 63) harfNotu = "AA";
@@ -121,7 +124,8 @@ else if(totalOrtWeighted >= 57.5 && totalOrtWeighted < 62.5){
   else if (result >= 38 && result < 40) harfNotu = "DC";
   else if (result >= 35 && result < 38) harfNotu = "DD+";
   else if (result >= 33 && result < 35) harfNotu = "DD";
-  else harfNotu = "FF";
+  else if (result < 33) harfNotu = "FF";
+  else harfNotu = "Hata!";
 }
 else if(totalOrtWeighted >= 52.5 && totalOrtWeighted < 57.5){
   if (result >= 65) harfNotu = "AA";
@@ -137,7 +141,8 @@ else if(totalOrtWeighted >= 52.5 && totalOrtWeighted < 57.5){
   else if (result >= 40 && result < 42) harfNotu = "DC";
   else if (result >= 37 && result < 40) harfNotu = "DD+";
   else if (result >= 35 && result < 37) harfNotu = "DD";
-  else harfNotu = "FF";
+  else if (result < 35) harfNotu = "FF";
+  else harfNotu = "Hata!";
 }
 else if(totalOrtWeighted >= 47.5 && totalOrtWeighted < 52.5){
   if (result >= 67) harfNotu = "AA";
@@ -153,7 +158,8 @@ else if(totalOrtWeighted >= 47.5 && totalOrtWeighted < 52.5){
   else if (result >= 42 && result < 44) harfNotu = "DC";
   else if (result >= 39 && result < 42) harfNotu = "DD+";
   else if (result >= 37 && result < 39) harfNotu = "DD";
-  else harfNotu = "FF";
+  else if (result < 37) harfNotu = "FF";
+  else harfNotu = "Hata!";
 }
 else if(totalOrtWeighted >= 42.5 && totalOrtWeighted < 47.5){
   if (result >= 69) harfNotu = "AA";
@@ -169,7 +175,8 @@ else if(totalOrtWeighted >= 42.5 && totalOrtWeighted < 47.5){
   else if (result >= 44 && result < 46) harfNotu = "DC";
   else if (result >= 41 && result < 44) harfNotu = "DD+";
   else if (result >= 39 && result < 41) harfNotu = "DD";
-  else harfNotu = "FF";
+  else if (result < 39) harfNotu = "FF";
+  else harfNotu = "Hata!";
 }
 else if(totalOrtWeighted < 42.5){
   if (result >= 71) harfNotu = "AA";
@@ -185,10 +192,11 @@ else if(totalOrtWeighted < 42.5){
   else if (result >= 46 && result < 48) harfNotu = "DC";
   else if (result >= 43 && result < 46) harfNotu = "DD+";
   else if (result >= 41 && result < 43) harfNotu = "DD";
-  else harfNotu = "FF";
+  else if (result < 41) harfNotu = "FF";
+  else harfNotu = "Hata!";
 }
  else{
-     harfNotu="onusöyleyemiyoruzmaalesef";
+     harfNotu="Hata!";
  }
 document.getElementById("harfNotuDisplay").textContent = "Harf Notun: " + harfNotu;
 }
