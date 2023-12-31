@@ -5,7 +5,27 @@ body {
   margin: 0;
   padding: 0;
   transition: background-color 0.3s ease;
+  overflow-y: auto; 
 }
+
+::-webkit-scrollbar {
+  width: 8px; 
+  margin-right: 8px; 
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #768b9b; 
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #d0d0d0; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #5c6f80; 
+}
+
 
 .container {
   width: 80%;
@@ -15,6 +35,8 @@ body {
   border-radius: 10px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   transition: background-color 0.3s ease;
+  display: flex;
+  flex-direction: column; 
 }
 
 .container:hover {
