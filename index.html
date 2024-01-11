@@ -9,7 +9,7 @@
 </head>
 <body>
   <div class="container">
-    <h1>Harf Notu Hesaplayıcı</h1> 
+    <h1> Tahmini Harf Notu Hesaplayıcı</h1> 
     <p class="subtitle">Bu araç, sınav notlarınızı 
     yeni harf notu sistemine dayanarak harf notuna çevirir.
     <br> <br> Program size harf notunuz hakkında eriştiğiniz
@@ -17,7 +17,9 @@
     yapılırken kullanılan standart sapmayla ve not ortalamasıyla 
     aynı olmamasından ötürü size YALNIZCA FİKİR VERİR.
     <br> <br>İstenilen verilerle oynayarak alternatif senaryolarda 
-    harf notunuzun ne olduğunu görebilirsiniz. 
+    harf notunuzun ne olduğunu görebilirsiniz. Ortalamayı sınıf
+    ortalamasından yüksek x2.4 ve x7.4 değerleriyle denemek olası en kötü sonucu verir.
+    Sınıf ort: 50 52.4 ve 57.4 değerlerini deneyin.
     </p>
     <div class="group" id="examGroup">
       <label for="examCount">Sınav Sayısı:</label>
@@ -28,7 +30,6 @@
     <p>Puanınız: <span id="result"></span></p>
     <p>Sınıfınızın Not Ortalaması: <span id="totalOrt"></span></p>
     <p id="harfNotuDisplay"></p>
-    <p align="right"><a href="https://ituspotter.github.io/game-interview/">Ituspotter Game</a></p>
   </div>
   <script src="script.js"></script>
 </body>
